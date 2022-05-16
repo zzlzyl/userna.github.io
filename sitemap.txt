@@ -1,3 +1,4 @@
+http://example.com/2022/05/16/jdk%E9%85%8D%E7%BD%AE/
 http://example.com/2022/05/16/%E9%98%BF%E6%96%AF%E9%A1%BF%E5%8D%A2%E5%8D%A1%E6%96%AF%E3%80%82%E5%A4%A7%E5%AE%B6%E8%83%BD%E7%90%86%E8%A7%A3%E3%80%821/
 http://example.com/tags/index.html
 http://example.com/categories/index.html

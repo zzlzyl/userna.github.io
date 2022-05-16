@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-16T08:25:37.167Z</updated>
+  <updated>2022-05-16T11:22:44.942Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/05/16/jdk%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2022/05/16/jdk%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-05-16T11:23:29.604Z</published>
+    <updated>2022-05-16T11:22:44.942Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.编辑主机名（3台机器）</p><p>vim &#x2F;etc&#x2F;hostname</p><p><img src="file:///C:\Users\LX\AppData\Local\Temp\ksohtml21180\wps1.jpg"></p><p>2.Hosts映射（3台机器)</p><p>vim &#x2F;etc&#x2F;hosts</p><p><img src="file:///C:\Users\LX\AppData\Local\Temp\ksohtml21180\wps2.jpg" alt="img"></p><p>3.关闭防火墙（3台机器)</p><p>systemctl stop firewalld.service  #关闭防火墙</p><p>systemctl disable firewalld.service #禁止防火墙开启自启</p><p>4.设置ssh免密登录(node1执行-&gt;node1|node2|node3) </p><p>ssh-keygen #4个回车 生成公钥、私钥</p><p>ssh-copy-id node1、ssh-copy-id node2、ssh-copy-id node3 #</p><p>5.集群时间同步（3台机器）</p><p>yum -y install ntpdate </p><p>ntpdate ntp4.aliyun.com</p><p><img src="file:///C:\Users\LX\AppData\Local\Temp\ksohtml21180\wps3.jpg" alt="img"></p><p>6.创建统一工作目录（3台机器)</p><p>mkdir -p &#x2F;export&#x2F;server&#x2F;   #软件安装路径</p><p>mkdir -p &#x2F;export&#x2F;data&#x2F;    #数据存储路径</p><p>mkdir -p &#x2F;export&#x2F;software&#x2F;  #安装包存放路径</p><p>二、JDK安装</p><p>1.编译环境软件安装目录</p><p>mkdir -p &#x2F;export&#x2F;server </p><p>2.JDK1.8安装 上传jdk-8u241-linux-x64.tar.gz 到&#x2F;export&#x2F;server&#x2F;目录下并解压</p><p>tar -zxvf jdk-8u241-linux-x64.tar.gz </p><p>3.配置环境变量</p><p>vim &#x2F;etc&#x2F;profile </p><p>export JAVA_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;jdk1.8.0_241 </p><p>exportPATH&#x3D;$PATH:$JAVA_HOME&#x2F;bin </p><p>export CLASSPATH&#x3D;.:$JAVA_HOME&#x2F;lib&#x2F;dt.jar:$JAVA_HOME&#x2F;lib&#x2F;tools.jar </p><p>4.重新加载环境变量文件</p><p>source &#x2F;etc &#x2F;profile</p><p>5.JDK配置后验证java-version</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.编辑主机名（3台机器）&lt;/p&gt;
+&lt;p&gt;vim &amp;#x2F;etc&amp;#x2F;hostname&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;file:///C:\Users\LX\AppData\Local\Temp\ksohtml21180\wps1.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title></title>
