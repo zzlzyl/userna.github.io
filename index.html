@@ -64,7 +64,7 @@
     
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 6.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 <body>
     <div id="container">
@@ -162,101 +162,99 @@
                 <aside id="sidebar">
    
         
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-up fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" style="display: block;"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            工具
+                        </a>
+                         <ul class="unstyled" id="tree" style="display: block;">  <li class="file"><a href="/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/">Spark local & stand-alone配置-中文文档</a></li>  <li class="file"><a href="/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Spark基础环境配置</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
     
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
             <section id="main">
-        <article id="post-jdk配置" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>1.编辑主机名（3台机器）</p>
-<p>vim &#x2F;etc&#x2F;hostname</p>
-<p><img src="file:///C:\Users\LX\AppData\Local\Temp\ksohtml21180\wps1.jpg"></p>
-<p>2.Hosts映射（3台机器)</p>
-<p>vim &#x2F;etc&#x2F;hosts</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2022/05/16/jdk%E9%85%8D%E7%BD%AE/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-阿斯顿卢卡斯。大家能理解。1" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-            
-        
-        
-            <p>阿斯顿卢卡斯。大家能理解。1</p>
-
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Spark基础环境配置" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -264,12 +262,17 @@
                 
                     <div class="article-meta">
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>
+    </div>
+
                         
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2022/05/16/hello-world/">
-            <time datetime="2022-05-16T07:23:33.607Z" itemprop="datePublished">2022-05-16</time>
+        <a href="/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+            <time datetime="2022-05-17T03:05:00.051Z" itemprop="datePublished">2022-05-17</time>
         </a>
     </div>
 
@@ -280,13 +283,13 @@
                         
                         
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/raw/main/source/_posts/hello-world.md'> Source </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/raw/main/source/_posts/Spark基础环境配置.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/edit/main/source/_posts/hello-world.md'> Edit </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/edit/main/source/_posts/Spark基础环境配置.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/commits/main/source/_posts/hello-world.md'> History </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/commits/main/source/_posts/Spark基础环境配置.md'> History </a>
                             </div>
                         
                     </div>
@@ -294,7 +297,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2022/05/16/hello-world/">Hello World</a>
+            <a class="article-title" href="/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Spark基础环境配置</a>
         </h1>
     
 
@@ -324,11 +327,11 @@
                 
                 
                     
-                    <p><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+                    <p><p>本文主</p>
+<p>本文主要使用Hexo与Github进行个人blog的搭建<br>Hexo官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a><br>Github官网：<a target="_blank" rel="noopener" href="https://github.com/">Github</a></p>
+<h3 id="环境介绍"><a href="#环境介绍" class="headerlink" title="环境介绍"></a>环境介绍</h3><p>本地环境为: Window10系统、Linux虚拟机</p>
+<hr>
+<h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><h2 id="1-基础环境"><a href="#1-基础环境" class="headerlink" title="1.基础环境"></a>1.基础环境</h2><p>在开始配置前，需要检查虚拟机主机名、hosts映射、关闭防火墙、免密登录、同步时间等操作</p>
 <p>
                 
             
@@ -336,7 +339,106 @@
         
             </div>   
             <div class="article-more-link">
-                <a href="/2022/05/16/hello-world/#more">查看更多</a>
+                <a href="/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-Spark local&amp; stand-alone配置" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/">
+            <time datetime="2022-05-17T03:04:54.670Z" itemprop="datePublished">2022-05-17</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/raw/main/source/_posts/Spark local&amp; stand-alone配置.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/edit/main/source/_posts/Spark local&amp; stand-alone配置.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zzlzyl/jiay/commits/main/source/_posts/Spark local&amp; stand-alone配置.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/">Spark local &amp; stand-alone配置-中文文档</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p>Spark提供多种运行模式，包括Spark local 模式(单机)、Spark alone 模式(集群)、 hadoop YARN 模式(集群)和 Kubernetes 模式(容器集群) </p>
+<ul>
+<li>Spark local 模式:以一个独立的进程,通过其内部的多个线程来模拟整个Spark运行时环境来开发和测试</li>
+<li>Spark alone 模式:各个角色以独立进程的形式存在,并组成Spark集群环境,运行在linux系统之上</li>
+<li>hadoop YARN 模式:Spark中的各个角色运行在YARN的容器内部,并组成Spark集群环境,运行在yarn容器内</li>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/#more">查看更多</a>
             </div>
         
         <footer class="article-footer">
