@@ -1,8 +1,8 @@
-https://wapchief.github.io/jiay/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/
-https://wapchief.github.io/jiay/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
-https://wapchief.github.io/jiay/404.html
-https://wapchief.github.io/jiay/about/index.html
-https://wapchief.github.io/jiay/tags/index.html
-https://wapchief.github.io/jiay/categories/index.html
-https://wapchief.github.io/jiay
-https://wapchief.github.io/jiay/categories/%E5%B7%A5%E5%85%B7/
+https://wapchief.github.io/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/
+https://wapchief.github.io/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
+https://wapchief.github.io/404.html
+https://wapchief.github.io/about/index.html
+https://wapchief.github.io/tags/index.html
+https://wapchief.github.io/categories/index.html
+https://wapchief.github.io/
+https://wapchief.github.io/categories/%E5%B7%A5%E5%85%B7/

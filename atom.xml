@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://wapchief.github.io/jiay/atom.xml" rel="self"/>
+  <link href="https://wapchief.github.io/atom.xml" rel="self"/>
   
-  <link href="https://wapchief.github.io/jiay/"/>
+  <link href="https://wapchief.github.io/"/>
   <updated>2022-05-17T03:09:36.368Z</updated>
-  <id>https://wapchief.github.io/jiay/</id>
+  <id>https://wapchief.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Spark基础环境配置</title>
-    <link href="https://wapchief.github.io/jiay/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <id>https://wapchief.github.io/jiay/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://wapchief.github.io/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>https://wapchief.github.io/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
     <published>2022-05-17T03:05:00.051Z</published>
     <updated>2022-05-17T03:09:36.368Z</updated>
     
@@ -34,15 +34,15 @@
     
     
     
-    <category term="工具" scheme="https://wapchief.github.io/jiay/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://wapchief.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>Spark local &amp; stand-alone配置-中文文档</title>
-    <link href="https://wapchief.github.io/jiay/2022/05/17/Spark%20local&amp;%20stand-alone%E9%85%8D%E7%BD%AE/"/>
-    <id>https://wapchief.github.io/jiay/2022/05/17/Spark%20local&amp;%20stand-alone%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://wapchief.github.io/2022/05/17/Spark%20local&amp;%20stand-alone%E9%85%8D%E7%BD%AE/"/>
+    <id>https://wapchief.github.io/2022/05/17/Spark%20local&amp;%20stand-alone%E9%85%8D%E7%BD%AE/</id>
     <published>2022-05-17T03:04:54.670Z</published>
     <updated>2022-05-17T03:59:53.173Z</updated>
     
@@ -58,7 +58,7 @@
     
     
     
-    <category term="工具" scheme="https://wapchief.github.io/jiay/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://wapchief.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
