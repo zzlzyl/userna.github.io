@@ -1,8 +1,8 @@
-http://example.com/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
-http://example.com/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/
-http://example.com/404.html
-http://example.com/about/index.html
-http://example.com/tags/index.html
-http://example.com/categories/index.html
-http://example.com/
-http://example.com/categories/%E5%B7%A5%E5%85%B7/
+https://github.com/zzlzyl/wapchief.github.io/2022/05/17/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/
+https://github.com/zzlzyl/wapchief.github.io/2022/05/17/Spark%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
+https://github.com/zzlzyl/wapchief.github.io/404.html
+https://github.com/zzlzyl/wapchief.github.io/about/index.html
+https://github.com/zzlzyl/wapchief.github.io/tags/index.html
+https://github.com/zzlzyl/wapchief.github.io/categories/index.html
+https://github.com/zzlzyl/wapchief.github.io
+https://github.com/zzlzyl/wapchief.github.io/categories/%E5%B7%A5%E5%85%B7/
